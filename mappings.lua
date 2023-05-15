@@ -33,5 +33,13 @@ return {
       "<cmd>foldclose<cr>",
       desc = "Close fold",
     },
+    ["tt"] = {
+      "<cmd>bNext<cr>",
+      desc = "Next buffer",
+    },
+    ["tT"] = {
+      "<cmd>bprevious<cr>",
+      desc = "Previous buffer",
+    },
   },
 }

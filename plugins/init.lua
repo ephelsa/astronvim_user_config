@@ -69,4 +69,7 @@ return {
     event = "CmdlineEnter",
     config = require "user.plugins.configs.wilder",
   },
+  {
+    "nvim-ts-autotag",
+  },
 }
