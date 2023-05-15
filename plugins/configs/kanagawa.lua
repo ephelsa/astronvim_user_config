@@ -7,6 +7,6 @@ return function()
     functionStyle = {},
     keywordStyle = { italic = false, bold = true },
     statementStyle = { bold = true },
-    typeStyle = {},
+    typeStyle = { bold = true },
   }
 end
