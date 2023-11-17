@@ -1,5 +1,11 @@
 return {
   {
+    "zbirenbaum/copilot.lua",
+    cmd = "Copilot",
+    event = "InsertEnter",
+    config = require "user.plugins.configs.copilot",
+  },
+  {
     "ur4ltz/surround.nvim",
     event = "BufRead",
     config = require "user.plugins.configs.surround-nvim",
@@ -71,5 +77,13 @@ return {
   },
   {
     "nvim-ts-autotag",
+  },
+  {
+    "L3MON4D3/LuaSnip",
+    version = "v1.2.1",
+    config = function(plugin, opts)
+      require "plugins.configs.luasnip"(plugin, opts) -- include the default astronvim config that calls the setup call
+      require("luasnip.loaders.from_vscode").lazy_load { paths = { "./lua/user/snippets" } } -- load snippets paths
+    end,
   },
 }
