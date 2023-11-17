@@ -1,0 +1,23 @@
+{
+  "React Native Component": {
+    "prefix": [
+      "rnc",
+      "rn-component"
+    ],
+    "body": [
+      "import { FunctionComponent } from \"react\";",
+      "import { StyleSheet, View } from \"react-native\";",
+      "",
+      "type ${0}Props = { $2 };",
+      "",
+      "const $1: FunctionComponent<${0}Props> = ({ $3 }) => {",
+      "  return <View></View>;",
+      "};",
+      "",
+      "export default $1;",
+      "",
+      "const styles = StyleSheet.create({ });"
+    ],
+    "description": "Create a basic ReactNative Component"
+  }
+}

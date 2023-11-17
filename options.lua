@@ -8,8 +8,8 @@ return {
     spell = false,
     linebreak = true,
     showbreak = "﬌ ",
-    -- guifont = { "FiraCode Nerd Font", ":h15" },
-    guifont = { "JetBrainsMono Nerd Font", ":h14" },
+    guifont = { "FiraCode Nerd Font", ":h15" },
+    -- guifont = { "JetBrainsMono Nerd Font", ":h14" },
   },
   g = {
     autoformat_enabled = true,
