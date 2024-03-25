@@ -1,9 +1,8 @@
 return {
   {
-    "zbirenbaum/copilot.lua",
-    cmd = "Copilot",
-    event = "InsertEnter",
-    config = require "user.plugins.configs.copilot",
+    "nvim-treesitter/nvim-treesitter",
+    event = "BufRead",
+    config = require "user.plugins.configs.nvim-treesitter",
   },
   {
     "ur4ltz/surround.nvim",
