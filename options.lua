@@ -7,7 +7,7 @@ return {
     wrap = true,
     spell = false,
     linebreak = true,
-    showbreak = "﬌ ",
+    showbreak = "",
     guifont = { "FiraCode Nerd Font", ":h15" },
     -- guifont = { "JetBrainsMono Nerd Font", ":h14" },
   },

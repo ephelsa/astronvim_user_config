@@ -11,10 +11,30 @@ return {
     config = require "user.plugins.configs.surround-nvim",
   },
   {
+    -- Theme
+    "craftzdog/solarized-osaka.nvim",
+    lazy = false,
+    priority = 1000,
+  },
+  {
+    -- Theme
+    "rmehri01/onenord.nvim",
+    config = require "user.plugins.configs.onenord",
+  },
+  {
+    -- Theme
+    "olivercederborg/poimandres.nvim",
+    lazy = false,
+    priority = 1000,
+    config = require "user.plugins.configs.poimandres",
+  },
+  {
+    -- Theme
     "EdenEast/nightfox.nvim",
     config = require "user.plugins.configs.nightfox",
   },
   {
+    -- Theme
     "rebelot/kanagawa.nvim",
     branch = "master",
     config = require "user.plugins.configs.kanagawa",
