@@ -1,2 +1,5 @@
 -- return "nightfox"
-return "kanagawa-wave"
+-- return "solarized-osaka"
+-- return "poimandres"
+-- return "onenord"
+return "kanagawa-dragon"

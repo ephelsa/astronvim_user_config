@@ -1,9 +1,8 @@
 return {
   {
-    "zbirenbaum/copilot.lua",
-    cmd = "Copilot",
-    event = "InsertEnter",
-    config = require "user.plugins.configs.copilot",
+    "nvim-treesitter/nvim-treesitter",
+    event = "BufRead",
+    config = require "user.plugins.configs.nvim-treesitter",
   },
   {
     "ur4ltz/surround.nvim",
@@ -11,10 +10,30 @@ return {
     config = require "user.plugins.configs.surround-nvim",
   },
   {
+    -- Theme
+    "craftzdog/solarized-osaka.nvim",
+    lazy = false,
+    priority = 1000,
+  },
+  {
+    -- Theme
+    "rmehri01/onenord.nvim",
+    config = require "user.plugins.configs.onenord",
+  },
+  {
+    -- Theme
+    "olivercederborg/poimandres.nvim",
+    lazy = false,
+    priority = 1000,
+    config = require "user.plugins.configs.poimandres",
+  },
+  {
+    -- Theme
     "EdenEast/nightfox.nvim",
     config = require "user.plugins.configs.nightfox",
   },
   {
+    -- Theme
     "rebelot/kanagawa.nvim",
     branch = "master",
     config = require "user.plugins.configs.kanagawa",
@@ -82,8 +101,25 @@ return {
     "L3MON4D3/LuaSnip",
     version = "v1.2.1",
     config = function(plugin, opts)
-      require "plugins.configs.luasnip"(plugin, opts) -- include the default astronvim config that calls the setup call
+      require "plugins.configs.luasnip" (plugin, opts)                                       -- include the default astronvim config that calls the setup call
       require("luasnip.loaders.from_vscode").lazy_load { paths = { "./lua/user/snippets" } } -- load snippets paths
     end,
+  },
+  {
+    "christoomey/vim-tmux-navigator",
+    cmd = {
+      "TmuxNavigateLeft",
+      "TmuxNavigateDown",
+      "TmuxNavigateUp",
+      "TmuxNavigateRight",
+      "TmuxNavigatePrevious",
+    },
+    keys = {
+      { "<c-h>",  "<cmd><C-U>TmuxNavigateLeft<cr>" },
+      { "<c-j>",  "<cmd><C-U>TmuxNavigateDown<cr>" },
+      { "<c-k>",  "<cmd><C-U>TmuxNavigateUp<cr>" },
+      { "<c-l>",  "<cmd><C-U>TmuxNavigateRight<cr>" },
+      { "<c-\\>", "<cmd><C-U>TmuxNavigatePrevious<cr>" },
+    },
   },
 }

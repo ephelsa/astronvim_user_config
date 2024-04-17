@@ -1,7 +1,7 @@
 return function()
-  local kanagawa = require "kanagawa"
-
-  kanagawa.setup {
+  require("kanagawa").setup {
+    transparent = true,
+    dimInactive = true,
     undercurl = true,
     commentStyle = { italic = true },
     functionStyle = {},
