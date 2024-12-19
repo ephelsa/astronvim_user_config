@@ -1,13 +1,18 @@
 return {
   {
-    "nvim-treesitter/nvim-treesitter",
-    event = "BufRead",
-    config = require "user.plugins.configs.nvim-treesitter",
-  },
-  {
     "ur4ltz/surround.nvim",
     event = "BufRead",
     config = require "user.plugins.configs.surround-nvim",
+  },
+  {
+    -- Theme
+    "jesseleite/nvim-noirbuddy",
+    dependencies = {
+      { "tjdevries/colorbuddy.nvim" },
+    },
+    lazy = false,
+    priority = 1000,
+    config = require "user.plugins.configs.nvim-noirbuddy",
   },
   {
     -- Theme
